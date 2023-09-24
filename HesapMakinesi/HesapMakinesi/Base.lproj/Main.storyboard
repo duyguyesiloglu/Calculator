@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WyX-IQ-meX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HesapMakinesi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="B6H-2L-doF">
+                                <rect key="frame" x="12" y="301" width="316" height="450"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="QVk-sN-haW">
+                                        <rect key="frame" x="0.0" y="0.0" width="316" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKS-9e-aun" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="80"/>
+                                                <color key="backgroundColor" name="üç"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="FUA-Zl-jpO"/>
+                                                    <constraint firstAttribute="height" constant="80" id="KcB-bV-lRZ"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="AC">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="allClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQ8-XL-0Md"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NAP-Lu-guX" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="274" y="0.0" width="42" height="80"/>
+                                                <color key="backgroundColor" name="iki"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="cGX-qs-1FB"/>
+                                                    <constraint firstAttribute="width" constant="80" id="lQ1-fk-bgK"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="÷">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="G1C-Bm-oYp"/>
+                                            <constraint firstAttribute="width" constant="350" id="kI3-IJ-vSg"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="5KU-sy-9sI">
+                                        <rect key="frame" x="0.0" y="92.5" width="316" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfy-h6-fkL" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="eBr-Ix-C9D"/>
+                                                    <constraint firstAttribute="width" constant="80" id="wUW-H8-4fc"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="7">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rzJ-Mq-r1w"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTM-wV-qes" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="89.5" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="HGx-Du-59L"/>
+                                                    <constraint firstAttribute="width" constant="80" id="S1e-jC-CiV"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="8">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baT-AL-EXK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uua-q9-Nqe" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="179.5" y="0.0" width="47" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="QqN-iw-s12"/>
+                                                    <constraint firstAttribute="width" constant="80" id="XP6-63-sKu"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="9">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRr-gT-3kS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iq3-XO-J3L" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="236" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" name="iki"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="26i-jJ-UN1"/>
+                                                    <constraint firstAttribute="height" constant="80" id="rTr-ba-kRA"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="×">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="TS6-xg-0f3"/>
+                                            <constraint firstAttribute="width" constant="350" id="msH-SW-wrm"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="OJw-Uo-cLp">
+                                        <rect key="frame" x="0.0" y="185" width="316" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gl-ET-Pwd" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="3QY-a7-YU5"/>
+                                                    <constraint firstAttribute="height" constant="80" id="4bX-Bu-YSA"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="4">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VoX-1p-pr2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqr-3b-FKW" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="89.5" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Zoj-7Y-rii"/>
+                                                    <constraint firstAttribute="height" constant="80" id="eA2-3c-EvT"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="5">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ndo-L1-y7l"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Grl-An-O8g" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="179.5" y="0.0" width="47" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="3JF-5l-2U6"/>
+                                                    <constraint firstAttribute="width" constant="80" id="SXA-ZC-b9V"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="6">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKs-4b-HcK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qo6-oP-Y1a" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="236" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" name="iki"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="6pC-dZ-0lE"/>
+                                                    <constraint firstAttribute="height" constant="80" id="rda-VG-dEy"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NEq-aH-uiM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="VAS-Ta-Y5j"/>
+                                            <constraint firstAttribute="width" constant="350" id="tYq-5Y-ixK"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="l2L-eu-Av6">
+                                        <rect key="frame" x="0.0" y="277.5" width="316" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WJ-9Y-4v6" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Ofs-ru-dtf"/>
+                                                    <constraint firstAttribute="width" constant="80" id="v1B-WX-5pY"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="1">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f13-sv-glu"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1z-uw-wh0" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="89.5" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="RTD-zz-54V"/>
+                                                    <constraint firstAttribute="width" constant="80" id="ZmP-qw-N9Y"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="2">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tQe-lE-qXg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHT-sK-j52" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="179.5" y="0.0" width="47" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="j3Z-IK-Dhl"/>
+                                                    <constraint firstAttribute="width" constant="80" id="tqV-bg-YVS"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6j-8X-ivq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUa-EN-Ziw" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="236" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" name="iki"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="SBz-VO-jXh"/>
+                                                    <constraint firstAttribute="height" constant="80" id="dp0-U6-AFj"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="SdI-aj-Gzq"/>
+                                            <constraint firstAttribute="height" constant="80" id="zPl-Jc-0Uk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Mp9-sn-T3e">
+                                        <rect key="frame" x="0.0" y="370" width="316" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FT7-rh-MvB" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="2rF-tb-7z4"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="5T1-SE-7K8"/>
+                                                    <constraint firstAttribute="width" constant="160" id="WAw-wO-Kgf"/>
+                                                    <constraint firstAttribute="height" constant="80" id="jSH-N2-dcb"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="0">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vn2-CX-SNQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnq-uq-BAM" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="177" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="Den-Ig-qbo"/>
+                                                    <constraint firstAttribute="width" constant="80" id="phx-kI-LPg"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=".">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="dotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjf-hp-JNe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUd-lp-0Bv" customClass="RoundButton" customModule="HesapMakinesi">
+                                                <rect key="frame" x="274" y="0.0" width="42" height="80"/>
+                                                <color key="backgroundColor" name="iki"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="CRA-xF-MoY"/>
+                                                    <constraint firstAttribute="height" constant="80" id="rrP-Xm-LMF"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="=">
+                                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="36"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundbutton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="equalbutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PLk-nt-C16"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="Egw-xN-LyG"/>
+                                            <constraint firstAttribute="width" constant="350" id="SaX-PS-hZH"/>
+                                            <constraint firstAttribute="height" constant="80" id="Z47-LE-hSw"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="wTl-ht-Pkc"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="FVT-WY-AX5"/>
+                                    <constraint firstAttribute="height" constant="450" id="NuP-kn-tHk"/>
+                                    <constraint firstAttribute="width" constant="350" id="OyF-kE-Ofz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="450" id="rE4-ED-Y4I"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g03-SV-RsM">
+                                <rect key="frame" x="170" y="167" width="49" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="205" id="0fM-RL-QIL"/>
+                                    <constraint firstAttribute="height" constant="21" id="FEd-uD-31f"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="166" id="YX9-ah-bHx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="109" id="att-aB-Pus"/>
+                                    <constraint firstAttribute="width" constant="49" id="bo2-dd-9Hy"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="109" id="mpz-dH-yYK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="arkaplan"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="B6H-2L-doF" secondAttribute="bottom" constant="15" id="BJj-y2-24u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g03-SV-RsM" secondAttribute="trailing" constant="121" id="FTh-nn-3fW"/>
+                            <constraint firstItem="g03-SV-RsM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="170" id="Jum-ph-0JE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B6H-2L-doF" secondAttribute="bottom" constant="15" id="R32-oc-pNX"/>
+                            <constraint firstItem="B6H-2L-doF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="SGl-SA-aby"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B6H-2L-doF" secondAttribute="trailing" constant="12" id="VCr-4q-b4U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B6H-2L-doF" secondAttribute="bottom" constant="15" id="bIo-Jw-iXG"/>
+                            <constraint firstItem="g03-SV-RsM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="bwi-6U-DKP"/>
+                            <constraint firstItem="g03-SV-RsM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cgv-vq-qM2"/>
+                            <constraint firstItem="B6H-2L-doF" firstAttribute="top" secondItem="g03-SV-RsM" secondAttribute="bottom" constant="25" id="gm7-5G-Y57"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="B6H-2L-doF" secondAttribute="bottom" constant="15" id="pII-uE-1Xf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B6H-2L-doF" secondAttribute="bottom" constant="15" id="qjZ-9L-ZeX"/>
+                            <constraint firstItem="B6H-2L-doF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rmy-KI-oh7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B6H-2L-doF" secondAttribute="bottom" constant="15" id="tnQ-ug-zwm"/>
+                            <constraint firstItem="g03-SV-RsM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="uQ1-67-ff3"/>
+                            <constraint firstItem="B6H-2L-doF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="209" id="ujn-5X-LCg"/>
+                            <constraint firstItem="B6H-2L-doF" firstAttribute="top" secondItem="g03-SV-RsM" secondAttribute="bottom" constant="25" id="vfP-2l-6pa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zSG-46-ixw"/>
+                    <connections>
+                        <outlet property="label" destination="g03-SV-RsM" id="bAr-Kx-axo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="l8K-Mc-q5U">
+                    <rect key="frame" x="0.0" y="0.0" width="110" height="200"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="WDo-Kr-gGw"/>
+                </stackView>
+            </objects>
+            <point key="canvasLocation" x="957.97101449275374" y="-2.0089285714285712"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SHb-BV-3y3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WyX-IQ-meX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ket-rr-EXC">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Mza-pK-NJf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UxO-Lv-E6R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="-2.0089285714285712"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="arkaplan">
+            <color red="0.1289999932050705" green="0.6119999885559082" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="iki">
+            <color red="0.87800002098083496" green="0.59200000762939453" blue="0.24699999392032623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="üç">
+            <color red="0.77999997138977051" green="0.29399999976158142" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
